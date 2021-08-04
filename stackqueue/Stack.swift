@@ -46,7 +46,7 @@ public final class Stack<E>: Sequence {
         return last == nil
     }
     
-    public struct Iterator<E>: IteratorProtocol {
+    public struct StackIterator<E>: IteratorProtocol {
         private var current: Node<E>?
         
         fileprivate init(_ first: Node<E>?) {
@@ -63,8 +63,8 @@ public final class Stack<E>: Sequence {
         }
     }
     
-    public func makeIterator() -> Iterator<E> {
-        return Iterator(last)
+    public func makeIterator() -> StackIterator<E> {
+        return StackIterator(last)
     }
     
 }
