@@ -14,10 +14,10 @@ func doStack(){
     stack.push(item: "Article Page")
 
     print("START STACK")
-    print(">", stack.peep())
+    print(">", stack.peek())
     print(">", stack.pop())
     print(">", stack.push(item: "Another Article Page"))
-    print(">", stack.peep())
+    print(">", stack.peek())
     print(">", stack.pop())
     print(">", stack.pop())
     print(">", stack.pop())

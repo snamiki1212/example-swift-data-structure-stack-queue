@@ -37,7 +37,7 @@ public final class Stack<E>: Sequence {
         return nil
     }
     
-    public func peep() -> E? {
+    public func peek() -> E? {
         if let peeped = last {
             return peeped.item
         }
