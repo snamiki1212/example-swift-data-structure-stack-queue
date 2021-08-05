@@ -21,6 +21,8 @@ public final class Stack<E>: Sequence {
     private(set) var count: Int = 0
     fileprivate var last: Node<E>? = nil
     
+    public init(){}
+    
     public func push(item: E) {
         last = Node<E>(item: item, next: last)
         count += 1
